@@ -19,7 +19,5 @@
             android:textColor="@color/titulo_azul"
             android:textSize="18sp"
             android:textStyle="bold" />
-
-
     </LinearLayout>
 </FrameLayout>

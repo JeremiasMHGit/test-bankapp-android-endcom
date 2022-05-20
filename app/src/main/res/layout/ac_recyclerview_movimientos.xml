@@ -94,8 +94,6 @@
                     app:srcCompat="@drawable/ic_list" />
 
             </RelativeLayout>
-
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

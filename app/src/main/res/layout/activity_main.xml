@@ -19,7 +19,7 @@
 
             <fragment
                 android:id="@+id/primer_fragment"
-                android:name="com.example.testbankados.fragments.CuentaFragment"
+                android:name="com.example.testbank.fragments.CuentaFragment"
                 android:layout_width="match_parent"
                 android:layout_height="52dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +30,7 @@
 
             <fragment
                 android:id="@+id/segundo_fragment"
-                android:name="com.example.testbankados.fragments.SaldoFragment"
+                android:name="com.example.testbank.fragments.SaldoFragment"
                 android:layout_width="match_parent"
                 android:layout_height="135dp"
                 android:layout_marginTop="53dp"
@@ -66,7 +66,7 @@
 
             <fragment
                 android:id="@+id/cuarto_fragment"
-                android:name="com.example.testbankados.fragments.TarjetasFragment"
+                android:name="com.example.testbank.fragments.TarjetasFragment"
                 android:layout_width="match_parent"
                 android:layout_height="210dp"
                 android:layout_marginTop="244dp"
@@ -79,7 +79,7 @@
 
             <fragment
                 android:id="@+id/quinto_fragment"
-                android:name="com.example.testbankados.fragments.MovimientosFragment"
+                android:name="com.example.testbank.fragments.MovimientosFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="464dp"
