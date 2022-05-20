@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".fragments.TarjetasFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="105dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_tarjetaOn"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_tarjeta_on"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/ic_tarjeta_on" />
+
+            <TextView
+                android:id="@+id/txt_statusTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="8dp"
+                android:text="Activa"
+                android:textColor="@color/titulo_verde"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/txt_saldoTarjeta"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/img_tarjetaOn"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_numTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="4dp"
+                android:text="1234 5678 9000 1234"
+                android:textColor="@color/backgr_azul_verde"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/img_tarjetaOn"
+                app:layout_constraintTop_toBottomOf="@+id/txt_statusTarjeta" />
+
+            <TextView
+                android:id="@+id/txt_nombreTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="4dp"
+                android:text="Berenice Garcia Lopez"
+                android:textColor="@color/backgr_azul_verde"
+                app:layout_constraintStart_toEndOf="@+id/img_tarjetaOn"
+                app:layout_constraintTop_toBottomOf="@+id/txt_numTarjeta" />
+
+            <TextView
+                android:id="@+id/txt_tipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="4dp"
+                android:text="Titular"
+                android:textColor="@color/backgr_azul_verde"
+                app:layout_constraintStart_toEndOf="@+id/img_tarjetaOn"
+                app:layout_constraintTop_toBottomOf="@+id/txt_nombreTarjeta" />
+
+            <TextView
+                android:id="@+id/txt_saldoTarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="76dp"
+                android:layout_marginRight="76dp"
+                android:text="$1,000.00"
+                android:textColor="@color/backgr_azul_verde"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

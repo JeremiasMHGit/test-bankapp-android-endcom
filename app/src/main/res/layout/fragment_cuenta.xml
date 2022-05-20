@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CuentaFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewID"
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgr_azul_verde">
+
+            <TextView
+                android:id="@+id/txt_cuentaNombre"
+                android:layout_width="120dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:text=" Nombre Apellido"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_cuentaSesion"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Ultimo inicio 08/06/2021"
+                android:textColor="@color/titulo_verde"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txt_cuentaNombre"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
